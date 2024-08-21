@@ -1,0 +1,31 @@
+{
+    "name": "ESP-IDF",
+    "image": "wjtje/development/esp-idf:v5.3",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "idf.showOnboardingOnInit": false,
+                "idf.toolsPath": "/opt/esp",
+                "idf.espIdfPath": "/opt/esp/idf",
+                "idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.12_env/bin/python",
+                "idf.port": "/dev/ttyUSB0",
+                "terminal.integrated.shell.linux": "/bin/zsh"
+            },
+            "extensions": [
+                "espressif.esp-idf-extension",
+                "ms-vscode.cpptools",
+                "twxs.cmake",
+                "guyutongxue.cpp-reference",
+                "cschlosser.doxdocgen",
+                "wayou.vscode-todo-highlight",
+                "gruntfuggly.todo-tree",
+                "vivaxy.vscode-conventional-commits",
+                "github.vscode-github-actions"
+            ]
+        }
+    },
+    "userEnvProbe": "loginInteractiveShell",
+    "runArgs": [
+        "--device=/dev/ttyUSB0"
+    ]
+}
